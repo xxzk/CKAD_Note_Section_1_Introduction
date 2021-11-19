@@ -101,6 +101,28 @@ kubectl apply -f edit_this.yaml
 ```
 
 
+**<span style='color:red'>Tips 快速刪除</span>**
+
+
+如果不使用內建的 `--now` 或者 `--force --grace-period=0` 刪除 K8s resource 的話，等待時間將會拖很久。 有些物件 (例如: `pod`) Kubernetes 預設會等一會兒材會刪除 (grace period) ，在考照的時候你不會想等的!
+
+<br>
+
+```bash
+## delete resource SUPER fast!
+kubectl delete pod my-nginx-76c845b9fc-fmnmh --force --grace-period=0
+
+## export
+export now='--force --grace-period=0'
+
+## use var
+kubectl delete deployments.apps nginx-rollout $now
+
+## delete now
+kubectl delete deployments.apps nginx-rollout --now
+```
+
+
 或者直接使用 `kubectl edit` 修改
 
 
