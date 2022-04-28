@@ -24,7 +24,7 @@
 
 <br>
 
-這邊告知 CKAD 考試的方式 (非選擇題、線上考試、會有監考官、考試時間 2 小時)
+這邊告知 CKAD 考試的方式 (非選擇題、線上考試、會有監考官、考試時間 2 小時，可以向監考官申請暫停去上廁所之類的)
 
 
 [CNCF-Certified Kubernetes Application Developer (CKAD)](https://www.cncf.io/certification/ckad/)
@@ -54,8 +54,8 @@ Keep the code - DEVOPS15 - handy while registering for the CKA or CKAD exams at 
 Certified Kubernetes Application Developer (CKAD) 要改版了嗎?
 官方公告新的 CKAD-2021 將在今年 Q3 實施 (最少會提早 30 天在網站上公告)
 
-目前考試項目與註冊頁面: https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/
-公告實施頁面: https://training.linuxfoundation.org/ckad-program-change-2021/
+目前考試項目與註冊頁面: https://training.linuxfoundation.org/certification/certified-kubernetes-application-developer-ckad/ \
+公告實施頁面: https://training.linuxfoundation.org/ckad-program-change-2021/ \
 7 月 SYSADMIN Day 折扣 (-100 USD): https://training.linuxfoundation.org/july-2021-promo/
 
 <br>
@@ -104,7 +104,7 @@ kubectl apply -f edit_this.yaml
 **<span style='color:red'>Tips 快速刪除</span>**
 
 
-如果不使用內建的 `--now` 或者 `--force --grace-period=0` 刪除 K8s resource 的話，等待時間將會拖很久。 有些物件 (例如: `pod`) Kubernetes 預設會等一會兒材會刪除 (grace period) ，在考照的時候你不會想等的!
+如果不使用內建的 `--now` 或者 `--force --grace-period=0` 刪除 K8s resource 的話，等待時間將會拖很久。 有些物件 (例如: `pod`) Kubernetes 預設會等一會兒才會刪除 (grace period) ，在考照的時候你不會想等的!
 
 <br>
 
